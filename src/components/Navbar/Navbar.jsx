@@ -17,7 +17,9 @@ const Navbar = () => {
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item}`}
+              onClick={()=>setToggle(false)}
+          >{item}</a>
           </li>
         ))}
       </ul>

@@ -5,11 +5,8 @@ import circle from '../../assets/circle.svg';
 import react from '../../assets/react.png';
 import redux from '../../assets/redux.png';
 import sass from '../../assets/sass.png';
-import about1 from '../../assets/about01.png'
-import about2 from '../../assets/about02.png'
-import about3 from '../../assets/about03.png'
-import about4 from '../../assets/about04.png'
 import './Header.scss';
+import AppWrap from '../../wrapper/AppWrap';
 const scaleVariants ={
     whileInView:{
         scale:[0,1],
@@ -75,4 +72,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default AppWrap(Header,'home');
